@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Responsive_Table_01 -->
+        <style>
+            .table {
+                table-layout:fixed;
+                width:100%;
+                text-align:center;
+            }
+            .table th { 
+                background:#ccc;
+            }
+            .table td, .table th {
+                padding:10px 20px;
+                border-top:1px solid #ccc;
+                word-break:break-all
+            }
+            .table--min {
+                min-width:700px;
+            }
+
+            @media screen and (max-width:768px) {
+                /*normal*/
+                .table-box {
+                    overflow-x:auto;
+                }
+            }
+        </style>
+        <section class="table01">
+            <h1>Scroll</h1>
+            <div class="table-box">
+              <table class="table table--min" cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                  <th style="width:10%">No</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Job</th>
+                  <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>4</td>
+                  <td>David</td>
+                  <td>25</td>
+                  <td>Designer</td>
+                  <td>Seoul</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Julia</td>
+                  <td>22</td>
+                  <td>Designer</td>
+                  <td>Tokyo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Yarn</td>
+                  <td>28</td>
+                  <td>Marketer</td>
+                  <td>New York</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Bale</td>
+                  <td>25</td>
+                  <td>Programmer</td>
+                  <td>Busan</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+        </section>
+        <!-- //Responsive_Table_01 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="...에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta name="keywords" content="keyword | keyword | keyword | keyword">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="COMPANY">
+    <meta property="og:description" content="...에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"> 
+    <meta property="og:locale" content="ko">
+    <meta property="og:image" content>
+    <meta property="og:url" content="https://">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
+    <script type="text/javascript" src="js/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+</head>
+<body>
+<div class="btn-area">
+    <button type="button" class="btn btn-line-primary pop-open">Full pop 열기</button>
+</div>
+<div id="pop6" class="pop-wrap">
+    <div class="pop-container container-type">
+        <div class="pop-header">
+            <span>팝업 타이틀</span>
+        </div>
+        <div class="pop-content">
+            <div class="pop-body">
+                내용
+            </div>
+            <div class="pop-footer">
+                <div class="btn-cta-area full">
+                    <button type="button" class="btn-cta btn-primary">
+                        <span>확인</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="pop-close">
+            <span class="sr-only">닫기</span>
+        </button>
+    </div>
+    <div class="dim"></div>
+</div>
+<script>
+    $(".pop-open").on("click", function(){
+        $(".pop-wrap").addClass("on");
+    });
+    $(".pop-close, .pop-wrap").on("click", function(){
+        $(".pop-wrap").removeClass("on");
+    });
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+.btn { display: block; height: 4.4rem; }
+
+.btn.btn-line-primary { padding: 0 2.4rem; border: .1rem solid #0255ff; border-radius: .8rem; font-size: 1.3rem; font-weight: 700; color: #0255ff; }
+
+.btn.btn-line-primary .btn.btn-line-primary:focus, .btn.btn-line-primary .btn.btn-line-primary:active { border-color: #0255ff; color: #0255ff; }
+
+.pop-wrap { visibility: hidden; }
+
+.pop-wrap .pop-container { visibility: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 100; background: #f5f5f5; width: 50%; height: 50%; margin: auto; }
+
+.pop-wrap .pop-container .pop-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 5.6rem; padding: 0 2rem; }
+
+.pop-wrap .pop-container .pop-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: calc(100% - 5.6rem); }
+
+.pop-wrap .pop-container .pop-content .pop-body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: calc(100% - 9.6rem); padding: 2rem; background: #fcfcfc; }
+
+.pop-wrap .pop-container .pop-content .pop-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
+
+.pop-wrap .pop-container .pop-close { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; top: 0; right: 0; width: 5.6rem; height: 5.6rem; background: url(../images/icon/ico_popup_close.png) no-repeat center; background-size: 1.8rem; }
+
+.pop-wrap .dim { position: fixed; top: 0; left: 0; z-index: 90; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
+
+.pop-wrap.on, .pop-wrap.on .pop-container { visibility: visible; text-align: center; }
+
+.btn-cta-area { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; padding: 2rem; }
+
+.btn-cta-area button { width: 100%; height: 5.6rem; border-radius: .8rem; background-color: #2967e7; color: #fff; }

@@ -1,0 +1,110 @@
+@charset "utf-8";
+.btn{
+    display:block;
+    height:4.4rem;
+}
+.btn.btn-line-primary{
+    padding:0 2.4rem;
+    border:.1rem solid #0255ff;
+    border-radius:.8rem;
+    font-size:1.3rem;
+    font-weight:700;
+    color:#0255ff;
+    %btn-line-primary{
+        border-color:#0255ff;
+        color:#0255ff;
+    }
+    &:focus{
+        @extend %btn-line-primary;
+    }
+    &:active{
+        @extend %btn-line-primary;
+    }
+}
+
+.pop-wrap{
+    visibility:hidden;
+    .pop-container{
+        visibility:hidden;
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        z-index:100;
+        background:#f5f5f5;
+        width:50%;
+        height:50%;
+        margin:auto;
+        .pop-header{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            height:5.6rem;
+            padding:0 2rem;
+        }
+        .pop-content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            height:calc(100% - 5.6rem);
+            .pop-body{
+                display:flex;
+                justify-content:center;
+                width:100%;
+                height:calc(100% - 9.6rem);
+                padding:2rem;
+                background:#fcfcfc;
+            }
+            .pop-footer{
+                display:flex;
+                justify-content:center;
+                width:100%;
+            }
+        }
+        .pop-close{
+            display:flex;
+            position:absolute;
+            top:0;
+            right:0;
+            width:5.6rem;
+            height:5.6rem;
+            background:url(../images/icon/ico_popup_close.png)no-repeat center;
+            background-size:1.8rem;
+        }
+    }
+    .dim{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:90;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,.7);
+    }
+}
+
+.pop-wrap.on, .pop-wrap.on .pop-container{
+    visibility:visible;
+    text-align:center;
+}
+
+.btn-cta-area{
+    display:flex;
+    width:100%;
+    padding:2rem;
+    button{
+        width:100%;
+        height:5.6rem;
+        border-radius:.8rem;
+        background-color:#2967e7;
+        color:#fff;
+        span{
+
+        }
+    }
+}
+
+
+

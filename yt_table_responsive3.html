@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Responsive_Table_03 -->
+        <style>
+            .table {
+                table-layout:fixed;
+                width:100%;
+                text-align:center;
+            }
+            .table th { 
+                background:#ccc;
+            }
+            .table td, .table th {
+                padding:10px 20px;
+                border-top:1px solid #ccc;
+                word-break:break-all
+            }
+            .table--min {
+                min-width:700px;
+            }
+            @media screen and (max-width:768px) {
+                /*normal*/
+                .table-box {
+                    overflow-x:auto;
+                }
+                /*horizontal*/
+                .table--horizontal tr {
+                    position:relative;
+                }
+                .table--horizontal th {
+                    position:fixed;
+                    width:32px;
+                }  
+            }
+        </style>
+        <section class="table03">
+            <h1>Horizontal</h1>
+            <div class="table-box">
+              <table class="table table--min table--horizontal" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th>1월</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th>2월</th>
+                  <td>8</td>
+                  <td>7</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <th>3월</th>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+              </table>
+            </div>
+        </section>
+        <!-- //Responsive_Table_03 -->
+
+    </div>
+</body>
+</html>
